@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-title-key="support.title" data-desc-key="support.desc">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -15,33 +15,43 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="AntiquePepe – Home">
+      <a class="brand" href="./" aria-label="AntiquePepe – Home" data-i18n-attr="aria-label:home">
         <img src="assets/logos/antiquepepe-mark-sm.png" alt="" width="38" height="34">
         <span>AntiquePepe</span>
       </a>
-      <nav class="nav" aria-label="Main">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
-          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-        </button>
-        <ul class="nav-list" id="nav-list">
-          <li><a href="./#games">Games</a></li>
-          <li><a href="./#about">About</a></li>
-          <li><a href="support.html" aria-current="page">Support</a></li>
-        </ul>
-      </nav>
+      <div class="header-right">
+        <div class="lang-flags" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+          <button class="flag-btn" type="button" data-set-lang="en" lang="en" aria-pressed="false" aria-label="English" title="English">
+            <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="flag-uk-clip"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#flag-uk-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+          </button>
+          <button class="flag-btn" type="button" data-set-lang="de" lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch">
+            <svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>
+          </button>
+        </div>
+        <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+          </button>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="./#games" data-i18n="nav.games">Games</a></li>
+            <li><a href="./#about" data-i18n="nav.about">About</a></li>
+            <li><a href="support.html" aria-current="page" data-i18n="nav.support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Support</span>
-        <h1>How can we help?</h1>
-        <p class="lead">Questions about a game, a technical problem or an idea to share — get in touch and we'll get back to you as soon as possible.</p>
+        <span class="eyebrow" data-i18n="support.eyebrow">Support</span>
+        <h1 data-i18n="support.h1">How can we help?</h1>
+        <p class="lead" data-i18n="support.lead">Questions about a game, a technical problem or an idea to share — get in touch and we'll get back to you as soon as possible.</p>
       </div>
     </section>
 
@@ -49,62 +59,62 @@
       <div class="prose">
 
         <div class="contact-box">
-          <h2>Contact</h2>
-          <p>The fastest way to reach us is by e-mail:</p>
+          <h2 data-i18n="support.contact">Contact</h2>
+          <p data-i18n="support.fastest">The fastest way to reach us is by e-mail:</p>
           <p><strong data-support-email>antiquepepe@gmail.com</strong></p>
-          <a class="btn btn-primary" data-mailto data-subject="Support request" aria-disabled="true">Write an e-mail</a>
+          <a class="btn btn-primary" href="mailto:antiquepepe@gmail.com" data-mailto data-subject-key="mail.support" data-i18n="support.write">Write an e-mail</a>
         </div>
 
-        <h2>What can we help with?</h2>
+        <h2 data-i18n="support.helpWith">What can we help with?</h2>
         <div class="support-grid">
           <div class="support-card">
-            <h3>General questions</h3>
-            <p>Anything about AntiquePepe or our games. <a data-mailto data-subject="General question">Send a question</a></p>
+            <h3 data-i18n="support.general.t">General questions</h3>
+            <p><span data-i18n="support.general.d">Anything about AntiquePepe or our games.</span> <a href="mailto:antiquepepe@gmail.com" data-mailto data-subject-key="mail.general" data-i18n="support.general.a">Send a question</a></p>
           </div>
           <div class="support-card">
-            <h3>Technical problems</h3>
-            <p>Crashes, loading issues, performance or display problems. <a data-mailto data-subject="Technical problem">Report a problem</a></p>
+            <h3 data-i18n="support.tech.t">Technical problems</h3>
+            <p><span data-i18n="support.tech.d">Crashes, loading issues, performance or display problems.</span> <a href="mailto:antiquepepe@gmail.com" data-mailto data-subject-key="mail.tech" data-i18n="support.tech.a">Report a problem</a></p>
           </div>
           <div class="support-card">
-            <h3>Bug reports</h3>
-            <p>Something doesn't work as expected? Tell us what happened. <a data-mailto data-subject="Bug report">Report a bug</a></p>
+            <h3 data-i18n="support.bug.t">Bug reports</h3>
+            <p><span data-i18n="support.bug.d">Something doesn't work as expected? Tell us what happened.</span> <a href="mailto:antiquepepe@gmail.com" data-mailto data-subject-key="mail.bug" data-i18n="support.bug.a">Report a bug</a></p>
           </div>
           <div class="support-card">
-            <h3>Feedback &amp; ideas</h3>
-            <p>Suggestions, wishes and honest opinions are always welcome. <a data-mailto data-subject="Feedback">Send feedback</a></p>
+            <h3 data-i18n="support.fb.t">Feedback &amp; ideas</h3>
+            <p><span data-i18n="support.fb.d">Suggestions, wishes and honest opinions are always welcome.</span> <a href="mailto:antiquepepe@gmail.com" data-mailto data-subject-key="mail.feedback" data-i18n="support.fb.a">Send feedback</a></p>
           </div>
         </div>
 
-        <h2 id="bug-report">Writing a helpful bug report</h2>
-        <p>The more details you include, the faster we can find and fix the issue:</p>
+        <h2 id="bug-report" data-i18n="support.report.h">Writing a helpful bug report</h2>
+        <p data-i18n="support.report.p">The more details you include, the faster we can find and fix the issue:</p>
         <ol class="checklist">
-          <li><strong>Game</strong> – e.g. Gomoku: Ascension, plus the app version if you know it.</li>
-          <li><strong>Device and system</strong> – e.g. iPhone 15, iOS 18 or Pixel 8, Android 15.</li>
-          <li><strong>What happened</strong> – and what you expected to happen instead.</li>
-          <li><strong>Steps to reproduce</strong> – what you did right before the problem occurred.</li>
-          <li><strong>Screenshots or screen recordings</strong> – if possible.</li>
+          <li data-i18n-html="support.report.1"><strong>Game</strong> – e.g. Gomoku: Ascension, plus the app version if you know it.</li>
+          <li data-i18n-html="support.report.2"><strong>Device and system</strong> – e.g. iPhone 15, iOS 18 or Pixel 8, Android 15.</li>
+          <li data-i18n-html="support.report.3"><strong>What happened</strong> – and what you expected to happen instead.</li>
+          <li data-i18n-html="support.report.4"><strong>Steps to reproduce</strong> – what you did right before the problem occurred.</li>
+          <li data-i18n-html="support.report.5"><strong>Screenshots or screen recordings</strong> – if possible.</li>
         </ol>
-        <p class="muted">Please don't send passwords or other sensitive personal data. Information you send by e-mail is used only to handle your request — see our <a href="privacy.html">Privacy Policy</a>.</p>
+        <p class="muted" data-i18n-html="support.report.note">Please don't send passwords or other sensitive personal data. Information you send by e-mail is used only to handle your request — see our <a href="privacy.html">Privacy Policy</a>.</p>
 
-        <h2 id="games">Game-specific support</h2>
+        <h2 id="games" data-i18n="support.games.h">Game-specific support</h2>
 
         <h3 id="gomoku-ascension">Gomoku: Ascension</h3>
-        <p>Platforms: iOS, Android · Status: Coming Soon</p>
+        <p data-i18n="support.gomoku.meta">Platforms: iOS, Android · Status: Coming Soon</p>
         <details class="faq">
-          <summary>When will the game be available?</summary>
-          <div><p>Gomoku: Ascension is currently in development. Store links will appear on the <a href="./#gomoku-ascension">games page</a> as soon as it is released.</p></div>
+          <summary data-i18n="support.faq1.q">When will the game be available?</summary>
+          <div><p data-i18n-html="support.faq1.a">Gomoku: Ascension is currently in development. Store links will appear on the <a href="./#gomoku-ascension">games page</a> as soon as it is released.</p></div>
         </details>
         <details class="faq">
-          <summary>I found a bug or have a problem with the game.</summary>
-          <div><p>Please <a data-mailto data-subject="Gomoku: Ascension – Bug report">send us a bug report</a> with the details listed above.</p></div>
+          <summary data-i18n="support.faq2.q">I found a bug or have a problem with the game.</summary>
+          <div><p data-i18n-html="support.faq2.a">Please <a href="mailto:antiquepepe@gmail.com" data-mailto data-subject="Gomoku: Ascension – Bug report">send us a bug report</a> with the details listed above.</p></div>
         </details>
         <details class="faq">
-          <summary>Where can I read how my data is handled?</summary>
-          <div><p>See the <a href="privacy.html#en-gomoku">Gomoku: Ascension section of our Privacy Policy</a>.</p></div>
+          <summary data-i18n="support.faq3.q">Where can I read how my data is handled?</summary>
+          <div><p data-i18n-html="support.faq3.a">See the <a href="privacy.html#en-gomoku">Gomoku: Ascension section of our Privacy Policy</a>.</p></div>
         </details>
 
         <hr>
-        <p class="muted">Legal information: <a href="imprint.html">Legal Notice</a> · <a href="privacy.html">Privacy Policy</a></p>
+        <p class="muted" data-i18n-html="support.legal">Legal information: <a href="imprint.html">Legal Notice</a> · <a href="privacy.html">Privacy Policy</a></p>
       </div>
     </div>
   </main>
@@ -117,13 +127,13 @@
           AntiquePepe
         </a>
         <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="imprint.html">Legal Notice</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="imprint.html" data-i18n="footer.imprint">Legal Notice</a></li>
+          <li><a href="support.html" data-i18n="footer.support">Support</a></li>
           <li><a class="is-disabled" data-store-link data-href="" aria-disabled="true">Instagram</a></li>
         </ul>
       </div>
-      <p class="copyright">© <span data-year>2026</span> AntiquePepe. All rights reserved.</p>
+      <p class="copyright">© <span data-year>2026</span> AntiquePepe. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </footer>
 </body>

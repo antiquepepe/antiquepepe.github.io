@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-title-key="index.title" data-desc-key="index.desc">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -19,24 +19,34 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="AntiquePepe – Home">
+      <a class="brand" href="./" aria-label="AntiquePepe – Home" data-i18n-attr="aria-label:home">
         <img src="assets/logos/antiquepepe-mark-sm.png" alt="" width="38" height="34">
         <span>AntiquePepe</span>
       </a>
-      <nav class="nav" aria-label="Main">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
-          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-        </button>
-        <ul class="nav-list" id="nav-list">
-          <li><a href="#games">Games</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </nav>
+      <div class="header-right">
+        <div class="lang-flags" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+          <button class="flag-btn" type="button" data-set-lang="en" lang="en" aria-pressed="false" aria-label="English" title="English">
+            <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="flag-uk-clip"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#flag-uk-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+          </button>
+          <button class="flag-btn" type="button" data-set-lang="de" lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch">
+            <svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>
+          </button>
+        </div>
+        <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+            <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+          </button>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#games" data-i18n="nav.games">Games</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="support.html" data-i18n="nav.support">Support</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -44,13 +54,13 @@
     <!-- ============ HERO ============ -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <img class="hero-mark" src="assets/logos/antiquepepe-mark.png" alt="AntiquePepe logo" width="282" height="256">
+        <img class="hero-mark" src="assets/logos/antiquepepe-mark.png" alt="AntiquePepe logo" data-i18n-attr="alt:hero.logo" width="282" height="256">
         <h1 id="hero-title">AntiquePepe</h1>
-        <p class="hero-sub">Independent Game Development</p>
-        <p class="hero-tagline">Crafting unique gaming experiences.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Independent Game Development</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">Crafting unique gaming experiences.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#games">Explore games</a>
-          <a class="btn" href="#about">About</a>
+          <a class="btn btn-primary" href="#games" data-i18n="hero.explore">Explore games</a>
+          <a class="btn" href="#about" data-i18n="hero.about">About</a>
         </div>
       </div>
       <span class="scroll-cue" aria-hidden="true"></span>
@@ -60,8 +70,8 @@
     <section class="section" id="games" aria-labelledby="games-title">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Games</span>
-          <h2 id="games-title">Our games</h2>
+          <span class="eyebrow" data-i18n="games.eyebrow">Games</span>
+          <h2 id="games-title" data-i18n="games.title">Our games</h2>
         </div>
 
         <div class="games-grid">
@@ -73,55 +83,56 @@
             - Screenshots:  assets/games/<slug>/screenshots/screenshot-1.jpg …
                             (portrait 1080×1920 for mobile games)
             - Store links:  put the real URL into data-href. Empty = "Coming soon".
+            - Texts:        add new data-i18n keys (EN + DE) in script.js
             Missing images automatically show a neutral placeholder.
             ======================================================================
           -->
           <article class="game-card reveal" id="gomoku-ascension">
             <div class="game-body">
               <div class="game-meta">
-                <span class="tag tag-status">Coming Soon</span>
+                <span class="tag tag-status" data-i18n="game.soon">Coming Soon</span>
                 <span class="tag">iOS</span>
                 <span class="tag">Android</span>
               </div>
               <h3 class="game-title">Gomoku: Ascension</h3>
-              <p class="game-tagline">A timeless strategy game, reimagined.</p>
+              <p class="game-tagline" data-i18n="gomoku.tagline">A timeless strategy game, reimagined.</p>
 
               <div class="store-buttons">
                 <a class="store-btn is-disabled" data-store-link data-href="" aria-disabled="true">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
-                  <span><small><span class="store-label">Download on the</span></small><strong>App Store</strong></span>
+                  <span><small data-soon="Coming soon to the" data-i18n-attr="data-soon:store.apple.soon"><span class="store-label" data-i18n="store.apple.label">Download on the</span></small><strong>App Store</strong></span>
                 </a>
                 <a class="store-btn is-disabled" data-store-link data-href="" aria-disabled="true">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.2-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z"/></svg>
-                  <span><small><span class="store-label">Get it on</span></small><strong>Google Play</strong></span>
+                  <span><small data-soon="Coming soon to" data-i18n-attr="data-soon:store.google.soon"><span class="store-label" data-i18n="store.google.label">Get it on</span></small><strong>Google Play</strong></span>
                 </a>
               </div>
             </div>
 
             <div class="game-media">
               <div class="media-frame media-cover">
-                <img src="assets/games/gomoku/cover.jpg" alt="Gomoku: Ascension cover art" width="1600" height="1000" decoding="async">
+                <img src="assets/games/gomoku/cover.jpg" alt="Gomoku: Ascension cover art" data-i18n-attr="alt:media.coverAlt" width="1600" height="1000" decoding="async">
                 <div class="placeholder" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
-                  Cover art coming soon
+                  <span data-i18n="media.cover">Cover art coming soon</span>
                 </div>
               </div>
-              <div class="screenshots" aria-label="Screenshots">
+              <div class="screenshots" aria-label="Screenshots" data-i18n-attr="aria-label:media.shots">
                 <div class="media-frame">
                   <img src="assets/games/gomoku/screenshots/screenshot-1.jpg" alt="Gomoku: Ascension screenshot 1" loading="lazy" decoding="async" width="1080" height="1920">
-                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg><span data-i18n="media.shot">Soon</span></div>
                 </div>
                 <div class="media-frame">
                   <img src="assets/games/gomoku/screenshots/screenshot-2.jpg" alt="Gomoku: Ascension screenshot 2" loading="lazy" decoding="async" width="1080" height="1920">
-                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg><span data-i18n="media.shot">Soon</span></div>
                 </div>
                 <div class="media-frame">
                   <img src="assets/games/gomoku/screenshots/screenshot-3.jpg" alt="Gomoku: Ascension screenshot 3" loading="lazy" decoding="async" width="1080" height="1920">
-                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg><span data-i18n="media.shot">Soon</span></div>
                 </div>
                 <div class="media-frame">
                   <img src="assets/games/gomoku/screenshots/screenshot-4.jpg" alt="Gomoku: Ascension screenshot 4" loading="lazy" decoding="async" width="1080" height="1920">
-                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg><span data-i18n="media.shot">Soon</span></div>
                 </div>
               </div>
             </div>
@@ -129,7 +140,7 @@
           <!-- ============ END GAME CARD ============ -->
 
           <div class="game-card game-card-upcoming reveal">
-            <p>More games in development.</p>
+            <p data-i18n="games.more">More games in development.</p>
           </div>
         </div>
       </div>
@@ -140,26 +151,26 @@
       <div class="container">
         <div class="about-grid">
           <div class="reveal">
-            <span class="eyebrow">About</span>
-            <h2 id="about-title">Independent by design.</h2>
+            <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+            <h2 id="about-title" data-i18n="about.title">Independent by design.</h2>
           </div>
           <div class="about-text reveal">
-            <p>AntiquePepe is an independent game development brand focused on building high-quality games for mobile and PC.</p>
-            <p>The goal is simple: games that are easy to pick up, rewarding to master and carefully crafted down to the details. From refined takes on classic strategy games to larger PC projects, every title is developed with attention to clean design, fair play and a polished experience.</p>
+            <p data-i18n="about.p1">AntiquePepe is an independent game development brand focused on building high-quality games for mobile and PC.</p>
+            <p data-i18n="about.p2">The goal is simple: games that are easy to pick up, rewarding to master and carefully crafted down to the details. From refined takes on classic strategy games to larger PC projects, every title is developed with attention to clean design, fair play and a polished experience.</p>
           </div>
         </div>
         <div class="pillars">
           <div class="pillar reveal">
-            <h3>Mobile</h3>
-            <p>Focused games for iOS and Android, designed for short sessions and long-term depth.</p>
+            <h3 data-i18n="pillar.mobile.t">Mobile</h3>
+            <p data-i18n="pillar.mobile.d">Focused games for iOS and Android, designed for short sessions and long-term depth.</p>
           </div>
           <div class="pillar reveal">
-            <h3>PC</h3>
-            <p>Larger, more ambitious projects built for desktop players.</p>
+            <h3 data-i18n="pillar.pc.t">PC</h3>
+            <p data-i18n="pillar.pc.d">Larger, more ambitious projects built for desktop players.</p>
           </div>
           <div class="pillar reveal">
-            <h3>Craft</h3>
-            <p>Minimal interfaces, thoughtful mechanics and attention to detail.</p>
+            <h3 data-i18n="pillar.craft.t">Craft</h3>
+            <p data-i18n="pillar.craft.d">Minimal interfaces, thoughtful mechanics and attention to detail.</p>
           </div>
         </div>
       </div>
@@ -170,10 +181,10 @@
       <div class="container">
         <div class="cta-panel reveal">
           <div>
-            <h2 id="support-title">Need help?</h2>
-            <p>Questions, bug reports or feedback — we're happy to hear from you.</p>
+            <h2 id="support-title" data-i18n="cta.title">Need help?</h2>
+            <p data-i18n="cta.text">Questions, bug reports or feedback — we're happy to hear from you.</p>
           </div>
-          <a class="btn btn-primary" href="support.html">Go to Support</a>
+          <a class="btn btn-primary" href="support.html" data-i18n="cta.btn">Go to Support</a>
         </div>
       </div>
     </section>
@@ -187,14 +198,14 @@
           AntiquePepe
         </a>
         <ul class="footer-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="imprint.html">Legal Notice</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="imprint.html" data-i18n="footer.imprint">Legal Notice</a></li>
+          <li><a href="support.html" data-i18n="footer.support">Support</a></li>
           <!-- INSTAGRAM: replace data-href with the profile URL, e.g. https://www.instagram.com/<handle>/ -->
           <li><a class="is-disabled" data-store-link data-href="" aria-disabled="true">Instagram</a></li>
         </ul>
       </div>
-      <p class="copyright">© <span data-year>2026</span> AntiquePepe. All rights reserved.</p>
+      <p class="copyright">© <span data-year>2026</span> AntiquePepe. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </footer>
 </body>

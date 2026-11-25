@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-title-key="privacy.title">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -13,24 +13,34 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="AntiquePepe – Home">
+      <a class="brand" href="./" aria-label="AntiquePepe – Home" data-i18n-attr="aria-label:home">
         <img src="assets/logos/antiquepepe-mark-sm.png" alt="" width="38" height="34">
         <span>AntiquePepe</span>
       </a>
-      <nav class="nav" aria-label="Main">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+      <div class="header-right">
+        <div class="lang-flags" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.label">
+          <button class="flag-btn" type="button" data-set-lang="en" lang="en" aria-pressed="false" aria-label="English" title="English">
+            <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="flag-uk-clip"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#flag-uk-clip)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+          </button>
+          <button class="flag-btn" type="button" data-set-lang="de" lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch">
+            <svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="1" fill="#000"/><rect y="1" width="5" height="1" fill="#DD0000"/><rect y="2" width="5" height="1" fill="#FFCE00"/></svg>
+          </button>
+        </div>
+        <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
           <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
         </button>
         <ul class="nav-list" id="nav-list">
-          <li><a href="./#games">Games</a></li>
-          <li><a href="./#about">About</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="./#games" data-i18n="nav.games">Games</a></li>
+          <li><a href="./#about" data-i18n="nav.about">About</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
         </ul>
-      </nav>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -275,13 +285,13 @@
           AntiquePepe
         </a>
         <ul class="footer-links">
-          <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
-          <li><a href="imprint.html">Legal Notice</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html" aria-current="page" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="imprint.html" data-i18n="footer.imprint">Legal Notice</a></li>
+          <li><a href="support.html" data-i18n="nav.support">Support</a></li>
           <li><a class="is-disabled" data-store-link data-href="" aria-disabled="true">Instagram</a></li>
         </ul>
       </div>
-      <p class="copyright">© <span data-year>2026</span> AntiquePepe. All rights reserved.</p>
+      <p class="copyright">© <span data-year>2026</span> AntiquePepe. <span data-i18n="footer.rights">All rights reserved.</span></p>
     </div>
   </footer>
 </body>

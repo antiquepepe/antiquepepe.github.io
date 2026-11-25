@@ -119,6 +119,36 @@ a { color: inherit; }
 }
 .brand img { width: auto; height: 34px; }
 .brand span { font-size: 16px; }
+@media (max-width: 340px) { .brand span { display: none; } }
+
+.header-right { display: flex; align-items: center; gap: 14px; }
+
+/* Language flags */
+.lang-flags { display: flex; align-items: center; gap: 4px; }
+.flag-btn {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s var(--ease), background 0.2s var(--ease);
+}
+.flag-btn svg {
+  display: block;
+  width: 24px;
+  height: 16px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.28);
+}
+.flag-btn:hover { opacity: 0.85; background: rgba(255, 255, 255, 0.05); }
+.flag-btn.is-active { opacity: 1; }
+.flag-btn.is-active svg { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), 0 0 0 3px var(--accent); }
+.no-js .lang-flags { display: none; }
 
 .nav { display: flex; align-items: center; }
 .nav-list {
@@ -344,7 +374,7 @@ p { margin: 0 0 1em; }
 a.store-btn[href]:hover { border-color: rgba(255, 255, 255, 0.4); transform: translateY(-1px); }
 .store-btn.is-disabled { opacity: 0.45; cursor: not-allowed; }
 .store-btn.is-disabled .store-label { display: none; }
-.store-btn.is-disabled small::before { content: "Coming soon to"; }
+.store-btn.is-disabled small::before { content: attr(data-soon); }
 
 /* Media (cover + screenshots) with graceful placeholders */
 
