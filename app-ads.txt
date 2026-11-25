@@ -1,0 +1,7 @@
+# app-ads.txt for AntiquePepe
+# NOT FINAL - the official AdMob entry has not been added yet.
+#
+# Copy the exact line from AdMob (Apps > View all apps > app-ads.txt > "How to set up app-ads.txt")
+# and paste it below, replacing this comment. It has this format:
+#   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# Do not invent or guess the publisher ID.

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AntiquePepe – Independent Game Development</title>
+  <meta name="description" content="AntiquePepe is an independent game developer creating mobile and PC games. Home of Gomoku: Ascension.">
+  <meta name="theme-color" content="#070807">
+  <link rel="canonical" href="https://antiquepepe.github.io/">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logos/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logos/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AntiquePepe">
+  <meta property="og:title" content="AntiquePepe – Independent Game Development">
+  <meta property="og:description" content="Crafting unique gaming experiences.">
+  <meta property="og:url" content="https://antiquepepe.github.io/">
+  <meta property="og:image" content="https://antiquepepe.github.io/assets/logos/icon-512.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="AntiquePepe – Home">
+        <img src="assets/logos/antiquepepe-mark-sm.png" alt="" width="38" height="34">
+        <span>AntiquePepe</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#games">Games</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <img class="hero-mark" src="assets/logos/antiquepepe-mark.png" alt="AntiquePepe logo" width="282" height="256">
+        <h1 id="hero-title">AntiquePepe</h1>
+        <p class="hero-sub">Independent Game Development</p>
+        <p class="hero-tagline">Crafting unique gaming experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games">Explore games</a>
+          <a class="btn" href="#about">About</a>
+        </div>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section class="section" id="games" aria-labelledby="games-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Games</span>
+          <h2 id="games-title">Our games</h2>
+        </div>
+
+        <div class="games-grid">
+
+          <!--
+            ======================================================================
+            GAME CARD — copy this whole <article> block to add another game.
+            - Cover image:  assets/games/<slug>/cover.jpg   (recommended 1600×1000)
+            - Screenshots:  assets/games/<slug>/screenshots/screenshot-1.jpg …
+                            (portrait 1080×1920 for mobile games)
+            - Store links:  put the real URL into data-href. Empty = "Coming soon".
+            Missing images automatically show a neutral placeholder.
+            ======================================================================
+          -->
+          <article class="game-card reveal" id="gomoku-ascension">
+            <div class="game-body">
+              <div class="game-meta">
+                <span class="tag tag-status">Coming Soon</span>
+                <span class="tag">iOS</span>
+                <span class="tag">Android</span>
+              </div>
+              <h3 class="game-title">Gomoku: Ascension</h3>
+              <p class="game-tagline">A timeless strategy game, reimagined.</p>
+
+              <div class="store-buttons">
+                <a class="store-btn is-disabled" data-store-link data-href="" aria-disabled="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 3v13h10V5H7zm5 14.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></svg>
+                  <span><small><span class="store-label">Download on the</span></small><strong>App Store</strong></span>
+                </a>
+                <a class="store-btn is-disabled" data-store-link data-href="" aria-disabled="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.2-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z"/></svg>
+                  <span><small><span class="store-label">Get it on</span></small><strong>Google Play</strong></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="game-media">
+              <div class="media-frame media-cover">
+                <img src="assets/games/gomoku/cover.jpg" alt="Gomoku: Ascension cover art" width="1600" height="1000" decoding="async">
+                <div class="placeholder" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>
+                  Cover art coming soon
+                </div>
+              </div>
+              <div class="screenshots" aria-label="Screenshots">
+                <div class="media-frame">
+                  <img src="assets/games/gomoku/screenshots/screenshot-1.jpg" alt="Gomoku: Ascension screenshot 1" loading="lazy" decoding="async" width="1080" height="1920">
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                </div>
+                <div class="media-frame">
+                  <img src="assets/games/gomoku/screenshots/screenshot-2.jpg" alt="Gomoku: Ascension screenshot 2" loading="lazy" decoding="async" width="1080" height="1920">
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                </div>
+                <div class="media-frame">
+                  <img src="assets/games/gomoku/screenshots/screenshot-3.jpg" alt="Gomoku: Ascension screenshot 3" loading="lazy" decoding="async" width="1080" height="1920">
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                </div>
+                <div class="media-frame">
+                  <img src="assets/games/gomoku/screenshots/screenshot-4.jpg" alt="Gomoku: Ascension screenshot 4" loading="lazy" decoding="async" width="1080" height="1920">
+                  <div class="placeholder" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>Soon</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- ============ END GAME CARD ============ -->
+
+          <div class="game-card game-card-upcoming reveal">
+            <p>More games in development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="reveal">
+            <span class="eyebrow">About</span>
+            <h2 id="about-title">Independent by design.</h2>
+          </div>
+          <div class="about-text reveal">
+            <p>AntiquePepe is an independent game development brand focused on building high-quality games for mobile and PC.</p>
+            <p>The goal is simple: games that are easy to pick up, rewarding to master and carefully crafted down to the details. From refined takes on classic strategy games to larger PC projects, every title is developed with attention to clean design, fair play and a polished experience.</p>
+          </div>
+        </div>
+        <div class="pillars">
+          <div class="pillar reveal">
+            <h3>Mobile</h3>
+            <p>Focused games for iOS and Android, designed for short sessions and long-term depth.</p>
+          </div>
+          <div class="pillar reveal">
+            <h3>PC</h3>
+            <p>Larger, more ambitious projects built for desktop players.</p>
+          </div>
+          <div class="pillar reveal">
+            <h3>Craft</h3>
+            <p>Minimal interfaces, thoughtful mechanics and attention to detail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUPPORT TEASER ============ -->
+    <section class="section" aria-labelledby="support-title">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2 id="support-title">Need help?</h2>
+            <p>Questions, bug reports or feedback — we're happy to hear from you.</p>
+          </div>
+          <a class="btn btn-primary" href="support.html">Go to Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="footer-brand" href="./">
+          <img src="assets/logos/antiquepepe-mark-sm.png" alt="" width="31" height="28">
+          AntiquePepe
+        </a>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="imprint.html">Legal Notice</a></li>
+          <li><a href="support.html">Support</a></li>
+          <!-- INSTAGRAM: replace data-href with the profile URL, e.g. https://www.instagram.com/<handle>/ -->
+          <li><a class="is-disabled" data-store-link data-href="" aria-disabled="true">Instagram</a></li>
+        </ul>
+      </div>
+      <p class="copyright">© <span data-year>2026</span> AntiquePepe. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
