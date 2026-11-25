@@ -419,6 +419,8 @@ a.store-btn[href]:hover { border-color: rgba(255, 255, 255, 0.4); transform: tra
   border-top: 1px solid var(--line);
 }
 .screenshots .media-frame { aspect-ratio: 9 / 16; }
+.screenshots-landscape { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.screenshots-landscape .media-frame { aspect-ratio: 16 / 9; }
 .screenshots .placeholder { font-size: 11px; }
 .screenshots .placeholder svg { width: 20px; height: 20px; }
 
