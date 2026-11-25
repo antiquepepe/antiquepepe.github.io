@@ -118,8 +118,8 @@ a { color: inherit; }
   letter-spacing: 0.01em;
 }
 .brand img { width: auto; height: 34px; }
-.brand span { font-size: 16px; }
-@media (max-width: 340px) { .brand span { display: none; } }
+.brand .brand-wordmark { width: auto; height: 17px; }
+@media (max-width: 340px) { .brand .brand-wordmark { display: none; } }
 
 .header-right { display: flex; align-items: center; gap: 14px; }
 
@@ -272,6 +272,8 @@ p { margin: 0 0 1em; }
   letter-spacing: -0.045em;
   line-height: 1;
 }
+.hero h1.hero-wordmark { line-height: 0; }
+.hero-wordmark img { width: clamp(260px, 64vw, 620px); height: auto; margin: 0 auto; }
 .hero-sub {
   margin: 22px 0 0;
   font-size: clamp(13px, 1.6vw, 15px);
@@ -474,6 +476,7 @@ a.store-btn[href]:hover { border-color: rgba(255, 255, 255, 0.4); transform: tra
 .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: 12px; color: var(--text); font-weight: 600; text-decoration: none; }
 .footer-brand img { height: 28px; width: auto; }
+.footer-brand .footer-wordmark { height: 15px; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0; padding: 0; list-style: none; }
 .footer-links a { text-decoration: none; transition: color 0.2s var(--ease); }
 .footer-links a:hover { color: var(--text); }
