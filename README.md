@@ -59,6 +59,11 @@ Add a matching section to `privacy.html` (EN + DE) and `support.html`.
 **app-ads.txt** – replace the comment lines with the exact line from AdMob,
 e.g. `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0` (real ID only).
 
+**After changing `style.css` or `script.js`** – raise the version number in the
+`style.css?v=…` / `script.js?v=…` references of all HTML pages (index, privacy, imprint,
+support, 404). GitHub Pages lets browsers cache these files for 10 minutes; the new
+number makes sure visitors get the matching version right away.
+
 **Placeholders** – everything still missing is marked `[MISSING …]`, `[FEHLT …]`,
 `[TO VERIFY …]` or `[PRÜFEN …]` (yellow, dashed). Search the files for these markers.
 
